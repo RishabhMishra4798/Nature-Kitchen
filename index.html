@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Nature Kitchen - Home</title>
+	<link rel='stylesheet' href='assets/css/bootstrap.css'>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+	<header>
+		<div class="main-head">
+			<div class="head-content">
+				<h2><b>Nature <span class="rotate1">Kitchen</span> </b></h2>
+			</div>
+			<div class="categories">
+				<div class="middle">
+					<a class="btn1" href="#"><i class="fab fa-facebook-f"></i></a>
+					<a class="btn1" href="#"><i class="fab fa-twitter"></i></a>
+					<a class="btn1" href="#"><i class="fab fa-google"></i></a>
+					<a class="btn1" href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+				<div class="navigation">
+					<ul><li onclick="arrow()">Categories<span id="logo";>&#x25BC</span>
+							<div id="drop">
+								<ul>
+									<li><a href="#standard">Standard</a></li>
+									<li><a href="#breakfast">Shakes</a></li>
+									<li><a href="#lunch">Lunch/dinner</a></li>
+								</ul>
+							</div>
+						</li>
+						
+						<!--</div>-->
+						<li>Cart<span class="logo1">&#128722</span></li>						
+						<li>Login/Register</li>
+					</ul>
+				</div>
+				
+			</div>
+
+		</div>
+		
+	</header>
+	
+	<div class="slider">
+		<figure>
+			<img src="assets/img/r1.png">
+			<img src="assets/img/banner.jpg">
+		</figure>
+	</div>
+	
+	<div class="search-main container">
+
+		<div class="search-box">
+			<input class="search-txt" type="text" name="search" placeholder="Type to search">
+				<a class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+				</a>
+		</div>
+
+	</div>
+
+	<div class="head2" id="standard">
+		<div class="container-fluid"><h3 class="cat">Standard</h3></div>
+	</div>
+	
+	<div class="main-container">
+		<div class="line1" id="standard-container">
+			<!-- items display here -->
+		</div>
+	</div>
+
+	<div class="banner">
+		<img src="assets/img/banner.jpg">
+	</div>
+
+	<div class="head2" id="lunch">
+		<div class="container-fluid"><h3 class="cat">Lunch/Dinner</h3></div>
+	</div>
+	
+	<div class="main-container">
+		<div class="line" id="lunchdinner-container">
+			<!-- items display here -->
+		</div>
+	</div>
+	
+	<div class="head2">
+		<div class="container-fluid" id="breakfast"><h3 class="cat">Shakes</h3></div>
+	</div>
+	
+	<div class="main-container">
+		<div class="line" id="shakes-container">
+			<!-- items display here -->
+		</div>
+	</div>
+
+	<footer>
+		<div class="div18 row">
+			<div class="div19 col-12 col-sm-6 col-md-4 col-lg">
+				<h3>ABOUT</h3><br>
+				<p>
+					Kitchen Stories<br><br>
+					Press<br><br>
+					<h4> Team Members </h4><br>
+					Rishabh Mishra <br>
+					Vikrant Tiwari <br>
+					Poonam Yadav<br>
+				</p>
+			</div>
+			<div class="div19 col-12 col-sm-6 col-md-4 col-lg">
+				<h3>HELP</h3><br>
+				<p>
+					Payments<br><br>
+					Shipping<br><br>
+					Cancellation & Returns<br><br>
+					FAQ<br><br>
+				</p>
+			</div>
+
+			<div class="div19 col-12 col-sm-6 col-md-4 col-lg">
+				<h3>Return Policy</h3><br>
+				<p>
+					Terms Of Use<br><br>
+					Security<br><br>
+					Privacy<br><br>
+					Sitemap<br><br>
+				</p>
+			</div>
+
+			<div class="div19 col-12 col-sm-6 col-md-4 col-lg">
+				<h3>Mail Us:</h3><br>
+				<p>
+					<a href="mailto:4798rishabh@gmail.com">4798rishabh@gmail.com</a><br><br>
+					Punjab ,India 144111
+				</p>
+		  </div>
+
+		  <div class="div19 col-12 col-md-6 col-lg-12">
+		    <h3>Registered Office Address:</h3><br>
+				<p>
+					Nature kitchen<br><br>
+					Phagwara, Jalandhar<br><br>
+					Village Phagwara 144111<br><br>
+					Near- Lovely Professional University<br><br>
+					Punjab, India<br><br>
+					Mob: +91 7985475770<br><br>
+				</p>
+		  </div>
+
+		</div>
+	</footer>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/content.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(this).attr("disabled","true");
+				$(this).css({"background-color":"#2b2c2d", "color": "white", "opacity":0.4});
+			});
+		});
+	</script>
+	<script>
+		function arrow(){
+			document.getElementById('logo').innerHTML= "&#x25B2";
+			var v=document.getElementById("drop")
+			if(v.style.display=="block"){
+				v.style.display="none";
+				document.getElementById('logo').innerHTML= "&#x25BC";
+			}
+			else{
+				v.style.display="block";
+				document.getElementById('logo').innerHTML= "&#x25B2";
+			}
+	    }
+	</script>
+</body>
+</html>
+
